@@ -7,16 +7,20 @@
     <title>Résumé</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="tst">
             <h3><a href="">Résumé</a></h3> 
             <h3><a href="">Compétences</a></h3>
             <h3><a href="">Langues</a></h3>
             <h3><a href="">Centres d'intérêt</a></h3>
             <h3><a href="">Divers</a></h3>
+            <a href="javascript:void(0);" class="icone" onclick="navBarResponsive()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <a href="https://www.usthb.dz/fr" target="_blank"><img src="./Photos/usthb-logoB.png"></a>
     </header>
@@ -42,5 +46,15 @@
 
     </section>
 </body>
-
+<script>
+    function navBarResponsive(){
+        var navBar = document.getElementsByTagName("nav")[0];
+        if (navBar.className !== "navBarResp") {
+          navBar.className = "navBarResp";
+        } else {
+          navBar.className = undefined;
+        }
+        console.log(navBar.className)
+    }   
+</script>
 </html>
