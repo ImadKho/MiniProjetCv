@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../navBarMediaQ.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c7b88410ae.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <style>
+        li>span{
+            color: white;
+            text-shadow: 3px 3px 1px black;
+        }
+        li>a{
+            font-weight: bolder;
+            text-decoration: underline;
+            margin-left: 0px;
+            cursor: pointer;
+            color: black;
+        }
+        li>a:hover{
+            color: #1a75bb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3><a href="../Résumé/résumé.html">Résumé</a></h3>
+            <h3><a style="color: #decf85;">Compétences</a></h3>
+            <h3><a href="">Langues</a></h3>
+            <h3><a href="">Centres d'intérêt</a></h3>
+            <h3><a href="">Divers</a></h3>
+            <a href="javascript:void(0);" class="icone" onclick="navBarResponsive()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <a href="https://www.usthb.dz/fr" target="_blank"><img src="../Photos/usthb-logoB.png"></a>
+    </header>
+
+    <section id="main">
+        <h1>COMPÉTÉNCES</h1>
+        <hr style="width: 50%; margin-top: -20px;">
+        <div id="gridContainer">
+            <div class="skillsContainer">
+                <i class="fa-solid fa-code"></i>
+                <h2>&nbsp;Programmation</h2>
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i>&nbsp;&nbsp; HTML5</li>
+                    <li><i class="fa-brands fa-css3-alt"></i>&nbsp;&nbsp; CSS3</li>
+                    <li><i class="fa-brands fa-js"></i>&nbsp;&nbsp; JavaScript</li>
+                    <li><i class="fa-brands fa-java" style="font-weight: bolder;"></i>&nbsp;&nbsp; Java</li>
+                    <li><i class="fa-solid fa-c"></i>&nbsp;&nbsp; Langage C</li>
+                    <li><i class="fa-brands fa-python"></i>&nbsp;&nbsp; Python</li>
+                </ul>
+            </div>
+
+            <div class="skillsContainer">
+                <i class="fa-regular fa-clipboard"></i>
+                <h2>&nbsp;Bureautique</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-file-word"></i>
+                        &nbsp;&nbsp;Word
+                    </li>
+                    <li >
+                        <i class="fa-solid fa-file-excel"></i>
+                        &nbsp;&nbsp;Excel
+                    </li>
+                    <li >
+                        <i class="fa-solid fa-file-powerpoint"></i>
+                        &nbsp;&nbsp;Power Point
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skillsContainer">
+                <i class="fa-solid fa-brush"></i>
+                <h2>&nbsp;Design</h2>
+                <ul>
+                    <li>
+                        <span>Ps</span>
+                        &nbsp; Photoshop
+                    </li>
+                    <li><i class="fa-brands fa-figma"></i>&nbsp;&nbsp;&nbsp;&nbsp; Figma</li>
+                </ul>
+            </div>
+
+            <div class="skillsContainer">
+                <i class="fa-solid fa-medal"></i>
+                <h2>&nbsp;Expérience</h2>
+                <ul>
+                    <li> * Membre du <a>Micro Club</a></li>
+                    <li> * Participation au GDG 2022</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function navBarResponsive() {
+        var navBar = document.getElementsByTagName("nav")[0];
+        if (navBar.className !== "navBarResp") {
+            navBar.className = "navBarResp";
+        } else {
+            navBar.className = undefined;
+        }
+        console.log(navBar.className)
+    }   
+</script>
+
+</html>

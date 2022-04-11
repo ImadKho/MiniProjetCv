@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Résumé</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../navBarMediaQ.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav class="tst">
-            <h3><a href="">Résumé</a></h3> 
+        <nav>
+            <h3><a style="color: #decf85;"">Résumé</a></h3>
             <h3><a href="">Compétences</a></h3>
             <h3><a href="">Langues</a></h3>
             <h3><a href="">Centres d'intérêt</a></h3>
@@ -22,14 +23,14 @@
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
-        <a href="https://www.usthb.dz/fr" target="_blank"><img src="./Photos/usthb-logoB.png"></a>
+        <a href="https://www.usthb.dz/fr" target="_blank"><img src="../Photos/usthb-logoB.png"></a>
     </header>
 
     <section id="main">
         <h1>RÉSUMÉ</h1>
         <hr>
         <div id="nameContainer">
-            <img src="./Photos/logoMoi.png">
+            <img src="../Photos/logoMoi.png">
             <h2>BELAIDI</h2>
             <h2>Imad Abderrahmane Adem</h2>
         </div>
@@ -37,24 +38,30 @@
         <hr>
         <div id="infoContainer">
             <h2>A propos de moi</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis aliquam ab magni incidunt consectetur! Nemo
-                architecto inventore quas magnam doloremque consequuntur cum ipsa, odit ratione corrupti? Nemo quasi nobis
-                debitis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minima iusto hic excepturi fugit eius,
-                ab molestiae deserunt cumque quia corporis nostrum quo, facere deleniti corrupti impedit omnis sit perferendis.
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Je suis <span>BELAIDI Imad Abderrahmane Adem</span>, âgé de 19 ans, 
+                je suis en L2 spécialité <span>ISIL</span> à <i>l'Univsersité des Sciences et de la Technologie Houari 
+                Boumedienne (USTHB), Alger</i>.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;J'ai choisi cette spécialité au vu de mon affection pour
+                la programmation et tout ce qui est pratique dans le domaine informatique, ainsi qu'une
+                certaine attirance vers le module Base de données qui m'a l'air fort intéressant.
             </p>
         </div>
 
     </section>
 </body>
 <script>
-    function navBarResponsive(){
+    function navBarResponsive() {
         var navBar = document.getElementsByTagName("nav")[0];
         if (navBar.className !== "navBarResp") {
-          navBar.className = "navBarResp";
+            navBar.className = "navBarResp";
         } else {
-          navBar.className = undefined;
+            navBar.className = undefined;
         }
         console.log(navBar.className)
     }   
 </script>
+
 </html>
