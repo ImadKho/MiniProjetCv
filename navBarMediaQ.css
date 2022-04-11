@@ -1,0 +1,52 @@
+@media (max-width: 940px){
+    
+    header{
+        display: relative;
+    }
+
+    header a>img{
+        margin-left:-10px;
+    }
+
+    nav a{
+        display: none;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .icone{
+        display: block;
+        padding: 0px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transform: scale(2);
+    }
+
+   .navBarResp{
+        display: block;
+    }
+    
+   .navBarResp h3{
+        width: 100%;
+    }
+
+   .navBarResp h3 a{
+        display: block;
+        margin-left: -10px;
+        background-color: #323746;
+    }
+
+   .navBarResp h3 a:hover{
+        background-color: #ddd;
+        color: black;
+    }
+
+   .navBarResp h3:first-child a{
+        margin-top: 45px;
+    }
+
+    .navBarResp h3:not(:first-child) a{
+        margin-top: -40px;
+    }
+}
