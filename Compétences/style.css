@@ -125,6 +125,7 @@ li{
 @media(max-width: 872px){
     #gridContainer{
         width: 100%;
+        row-gap: 60px;
     }
 }
 @media(max-width: 487px){
