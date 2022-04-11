@@ -130,6 +130,7 @@ li{
 @media(max-width: 487px){
     h1{
         font-size: 40px;
+        margin-left: -8px;
     }
 
     .skillsContainer>h2{
